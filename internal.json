@@ -4,12 +4,13 @@
     "config:base",
     ":approveMajorUpdates",
     ":automergeLinters",
-    ":automergePatch",
+    ":automergeMinor",
     ":automergePr",
     ":automergeRequireAllStatusChecks",
     ":automergeTesters",
     ":dependencyDashboard",
-    ":enablePreCommit"
+    ":enablePreCommit",
+    ":combinePatchMinorReleases"
   ],
   "timezone": "Europe/London",
   "platformAutomerge": true,
