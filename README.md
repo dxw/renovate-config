@@ -1,5 +1,7 @@
 # dxw Standardised Renovate Configs
 
+**These are under development, and may change without warning. We recommend not using them (yet) for anything which is mission critical.**
+
 This repository holds some standard configurations for [Renovate](https://www.mend.io/renovate/), our preferred dependency update bot.
 
 ## How to use
