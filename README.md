@@ -8,11 +8,14 @@ This repository holds some standard configurations for [Renovate](https://www.me
 
 ### Internal
 
-The internal config (`internal.json`) is intended for dxw internal repos where the impact of changes is low. It has the following behaviour:
+The internal config (`internal.json`) is intended for dxw internal repos where the impact of changes is low. It implements the following behaviours:
 
-- Waits 5 days after release
-- Automerges minor and patch updates
-- Automerges between 10am and 4pm
+- Will create a "Dependency Dashboard" issue for the repository, for tracking the state of updates and triggering some behaviours
+- Automatically merges minor and patch updates to all dependencies between 10am and 4pm
+- Opens a PR for all updates, and requires all tests to pass
+- Requires all major updates to have a PR explicitly opened via the Dependency Dashboard
+- Will wait three days following a package release before opening PRs (to allow time for broken versions to be yanked)
+  - For NPM packages (which have a higher churn), will wait five days.
 
 ## How to use
 
