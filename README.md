@@ -4,6 +4,16 @@
 
 This repository holds some standard configurations for [Renovate](https://www.mend.io/renovate/), our preferred dependency update bot.
 
+## Behaviour
+
+### Internal
+
+The internal config (`internal.json`) is intended for dxw internal repos where the impact of changes is low. It has the following behaviour:
+
+- Waits 5 days after release
+- Automerges minor and patch updates
+- Automerges between 10am and 4pm
+
 ## How to use
 
 1. Install the [Renovate app](https://github.com/apps/renovate) for the repository, if not already installed.
