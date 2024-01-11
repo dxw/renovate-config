@@ -46,3 +46,7 @@ The internal config (`internal.json`) is intended for dxw internal repos where t
 1. Consider if these presets meet the needs of the repository. These are _not_ intended to be prescriptive, just a starting point. If you need to, change any other [configuration options](https://docs.renovatebot.com/configuration-options/) specific to the repository.
 1. If a new installation, merge the Renovate configuration PR.
 1. If you have branch protection turned on and it requires reviews, make sure you either [bypass protections for Renovate or install renovate-approve](https://docs.renovatebot.com/key-concepts/automerge/#pull-requests-required). The recommended path is to use the bypass protections unless you need approvals for another workflow.
+
+### Things to be aware of
+
+By default, this configuration will use GitHub's own automerging behaviour. This will merge a branch once all _required_ actions have passed, so you should make sure that test suites etc are configured correctly.
