@@ -4,5 +4,11 @@
     "github>dxw/renovate-config",
     ":automergeMinor",
     ":combinePatchMinorReleases"
+  ],
+  "packageRules": [
+    {
+      "dependencyDashboardApproval": false,
+      "matchUpdateTypes": ["major"]
+    }
   ]
 }
