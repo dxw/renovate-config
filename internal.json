@@ -9,6 +9,12 @@
     {
       "dependencyDashboardApproval": false,
       "matchUpdateTypes": ["major"]
+    },
+    {
+      "matchCategories": "ruby",
+      "matchDepNames": "rails",
+      "matchUpdateTypes": ["minor"],
+      "automerge": false
     }
   ]
 }
